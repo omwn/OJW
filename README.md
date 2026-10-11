@@ -7,8 +7,13 @@ backbone and is linked to English and Indonesian.
 
 The resource is developed by David Moeljadi and Zakariya Pamuji Aminullah.
 
-Browse the wordnet at **[davidmoeljadi.github.io/OJW](https://davidmoeljadi.github.io/OJW)**
-or download the databases from the [latest release](https://github.com/davidmoeljadi/OJW/releases/latest).
+Browse the wordnet at **[omwn.github.io/OJW](https://omwn.github.io/OJW/)**
+or download the databases from the [latest release](https://github.com/omwn/OJW/releases/latest).
+
+The origin repository is
+[github.com/davidmoeljadi/OJW](https://github.com/davidmoeljadi/OJW).  The web
+site is built and served from the
+[omwn/OJW](https://github.com/omwn/OJW) fork, which also hosts the releases.
 
 ---
 
@@ -98,10 +103,10 @@ Releases are tagged `YYYY.MM.DD` and include three assets:
 To create a release:
 
 ```bash
-git tag 2026.03.14
-git push origin 2026.03.14
+git tag v2026.03.14
+git push origin v2026.03.14
 
-gh release create 2026.03.14 \
+gh release create v2026.03.14 \
   --title "OJW 2026.03.14" \
   --notes "Description of changes." \
   docs/kaw-cygnet.db.gz \
@@ -109,15 +114,15 @@ gh release create 2026.03.14 \
   build/wnkaw-2026.03.14.tar.xz
 ```
 
-The live web UI at `davidmoeljadi.github.io/OJW` fetches the databases from the
-latest release automatically.
+The live web UI at `omwn.github.io/OJW` fetches the databases from the
+latest release of omwn/OJW automatically.
 
 ---
 
 ## Web interface
 
 The web UI (`docs/index.html`) is the
-[Cygnet](https://github.com/rowanhm/cygnet) browser, configured for OJW via
+[Cygnet](https://github.com/omwn/cygnet) browser, configured for OJW via
 `docs/local.json`.  It runs entirely in the browser using
 [sql.js](https://sql.js.org/) — no server-side component is needed.
 
