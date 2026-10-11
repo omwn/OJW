@@ -92,7 +92,7 @@ with the locally-built databases.
 
 ## Releases
 
-Releases are tagged `YYYY.MM.DD` and include three assets:
+Releases are tagged `vYYYY.MM.DD` and include three assets:
 
 | Asset | Contents |
 |---|---|
