@@ -103,10 +103,10 @@ Releases are tagged `YYYY.MM.DD` and include three assets:
 To create a release:
 
 ```bash
-git tag 2026.03.14
-git push origin 2026.03.14
+git tag v2026.03.14
+git push origin v2026.03.14
 
-gh release create 2026.03.14 \
+gh release create v2026.03.14 \
   --title "OJW 2026.03.14" \
   --notes "Description of changes." \
   docs/kaw-cygnet.db.gz \
